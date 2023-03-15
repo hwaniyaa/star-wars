@@ -1,0 +1,265 @@
+.wrapper {
+  width: 100%;
+
+  .main-content {
+    width: 100%;
+    height: 100vh;
+    .main-bgImg {
+      width: 100%;
+      height: 100vh;
+      background-image: url("../images/bg-img/egs-starwarsbattlefrontiicelebrationedition-dice-g1a-03-1920x1080-9e43a5cc414f.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      box-sizing: border-box;
+      object-fit: cover;
+      position: relative;
+      .sub-img {
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/bg-img/1-sub.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0; left: 0;
+        animation: 1.5s darkside infinite;
+      }
+      @keyframes darkside {
+        0% { opacity: 0.3 }
+        5% { opacity: 0.6 }
+        15% { opacity: 0.4 }
+        20% { opacity: 0.8 }
+        25% { opacity: 0.3 }
+        30% { opacity: 1 }
+        35% { opacity: 0.4 }
+        40% { opacity: 0.6 }
+        45% { opacity: 1 }
+        50% { opacity: 0.2 }
+        55% { opacity: 0.3 }
+        60% { opacity: 0.6 }
+        65% { opacity: 0.4 }
+        70% { opacity: 0.2 }
+        80% { opacity: 0.6 }
+        85% { opacity: 0.8 }
+        90% { opacity: 0.4 }
+        95% { opacity: 0.6 }
+        100% { opacity: 0.4 }
+      }
+      .sub-img02 {
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/bg-img/1-sub02.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+        top: 0; left: 0;
+        animation: 8s lightside infinite;
+      }
+      @keyframes lightside {
+        0% { opacity: 0.3 }
+        10% { opacity: 0.6 }
+        20% { opacity: 0.4 }
+        30% { opacity: 1 }
+        40% { opacity: 0.3 }
+        50% { opacity: 0.6 }
+        60% { opacity: 0.4 }
+        70% { opacity: 0.6 }
+        80% { opacity: 1 }
+        90% { opacity: 0.1 }
+        100% { opacity: 0.4 }
+      }
+      .center {
+        width: 95vw;
+        height: 38vw;
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        .center-top {
+          margin-left: 5vw;
+          .nav-top {
+            width: 45vw;
+            height: 5vw;
+            outline: 2px solid #ffffff63;
+            border-radius: 3px;
+            color: #fff;
+            font-weight: bolder;
+            ul {
+              display: flex;
+              justify-content: space-around;
+              li {
+                margin-top: 2vw;
+                a {
+                  padding: 1vw 3.5vw;
+                  border-left: 2px solid #ffffff63;
+                  border-right: 2px solid #ffffff63;
+                  background-color: #111111ad;
+                }
+              }
+            }
+          }
+          .nav-center {
+            width: 50vw;
+            height: 20vw;
+            margin-top: 5vw;
+            outline: 3px solid #ffffff63;
+            border-radius: 3px;
+            .nav-center--bg {
+              width: 100%;
+              height: 100%;
+              position: relative;
+              
+              &::before {
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-image: url("../images/item-bg/Star-Wars-gun-space-weapon-soldier-military-784470-wallhere.com.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, -8px 12px 28px 9px rgba(0,0,0,0.48); 
+                box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, -8px 12px 28px 9px rgba(0,0,0,0.48);
+                -webkit-box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, inset 0px 18px 24px 4px rgba(0,0,0,0.63); 
+                box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, inset 0px 18px 24px 4px rgba(0,0,0,0.63);
+              }
+              .nav-center--bg-txt {
+                
+                a {
+                  width: 100%;
+                  height: 100%;
+                  color: #fff;
+                  font-size: 60px;
+                  font-weight: bolder;
+                  display: grid;
+                  place-items: center;
+                  position: absolute;
+                  top: 50%; left: 50%;
+                  transform: translate(-50%,-50%);
+                  background-color: #00000088;
+                  opacity: 0;
+                  transition: all 0.8s ease;
+                }
+              }
+            }
+            .nav-center--bg-txt:hover a {
+              opacity: 1;
+            }
+          }
+          .nav-bottom {
+            width: 50vw;
+            height: 5vw;
+            margin-top: 2.5vw;
+            color: #fff;
+            font-weight: bolder;
+            outline: 2px solid #ffffff63;
+            border-radius: 3px;
+            ul {
+              display: flex;
+              justify-content: space-around;
+              li {
+                margin-top: 2vw;
+                a {
+                  padding: 1vw 3.5vw;
+                  border-left: 2px solid #ffffff63;
+                  border-right: 2px solid #ffffff63;
+                  background-color: #111111ad;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }//.main-content
+  .main-content02 {
+    width: 100%;
+    height: 100vh;
+    .main02-bgImg {
+      width: 100%;
+      height: 100vh;
+      background-image: url("../images/death_star.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      .main02-contents {
+        width: 100%;
+        height: 100vh;
+        .main02-contents--item {
+          width: 100%;
+          height: 49vw;
+          position: relative;
+          display: inline-block;
+          .main02-contents--colorBox {
+            width: 30vw;
+            height: 30vw;
+            background-color: rgb(255, 181, 181);
+            position: absolute;
+            top: 15%; left: 15%;
+            border-radius: 11px;
+            .main02-contents--logo {
+              width: 100%;
+              height: 100%;
+              position: relative;
+              img {
+                width: 30vw;
+                transform: rotate(-90deg);
+                position: absolute;
+                top: 28.5%; left: -17%;
+                opacity: 0.5;
+              }
+            }//.main02-contents--logo
+          }//.main02-contents--colorBox
+          .main02-contents--bgBox {
+            width: 55vw;
+            height: 30vw;
+            position: absolute;
+            bottom: 12%; right: 13%;
+            border-radius: 11px;
+            background-image: url("../images/item-1-bg.webp");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            box-shadow: 30px 10px 50px #0000006e;
+            .characters-box {
+              width: 100%;
+              height: 100%;
+              position: relative;
+              .character01 {
+                position: absolute;
+                top: -38%; left: -18%;
+                &::before {
+                  content: "";
+                  display: block;
+                  width: 100%;
+                  height: 100%;
+                  background-image: url("../images/pngegg-\(17\)-sub.png");
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: cover;
+                  position: absolute;
+                  top: 0; left: 0;
+                  z-index: 1;
+                  animation: 1s darkside infinite;
+                }
+                
+                img {
+                  width: 28vw;
+                }
+              }
+            }//.characters-box
+          }//.main02-contents--bgBox
+        }//.main02-contents--item
+      }//.main02-contents
+    }//.main02-bgImg
+  }//.main-content02
+}//.wrapper
+
+
+
+
+
+
+    
